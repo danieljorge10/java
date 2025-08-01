@@ -1,0 +1,36 @@
+public class JogoFPS extends Jogo {
+    private int qtdArmas;
+    private boolean modoOnline;
+    private String mapaPrincipal;
+
+    public JogoFPS(String nome, String desenvolvedora, double preco, int qtdArmas, boolean modoOnline, String mapaPrincipal) {
+        super(nome, desenvolvedora, preco);
+        this.qtdArmas = qtdArmas;
+        this.modoOnline = modoOnline;
+        this.mapaPrincipal = mapaPrincipal;
+    }
+
+    public int getQtdArmas() {
+        return qtdArmas;
+    }
+
+    public void setQtdArmas(int qtdArmas) {
+        this.qtdArmas = qtdArmas;
+    }
+
+    public boolean isModoOnline() {
+        return modoOnline;
+    }
+
+    public void setModoOnline(boolean modoOnline) {
+        this.modoOnline = modoOnline;
+    }
+
+    public String getMapaPrincipal() {
+        return mapaPrincipal;
+    }
+
+    public void setMapaPrincipal(String mapaPrincipal) {
+        this.mapaPrincipal = mapaPrincipal;
+    }
+}
