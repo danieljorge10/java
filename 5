@@ -1,0 +1,37 @@
+public class JogoPlataforma extends Jogo {
+    private int quantidadeFases;
+    private boolean suporteCoop;
+    private String personagemPrincipal;
+
+    public JogoPlataforma(String nome, String desenvolvedora, double preco, int quantidadeFases, boolean suporteCoop, String personagemPrincipal) {
+        super(nome, desenvolvedora, preco);
+        this.quantidadeFases = quantidadeFases;
+        this.suporteCoop = suporteCoop;
+        this.personagemPrincipal = personagemPrincipal;
+    }
+
+    public int getQuantidadeFases() {
+        return quantidadeFases;
+    }
+
+    public void setQuantidadeFases(int quantidadeFases) {
+        this.quantidadeFases = quantidadeFases;
+    }
+
+    public boolean isSuporteCoop() {
+        return suporteCoop;
+    }
+
+    public void setSuporteCoop(boolean suporteCoop) {
+        this.suporteCoop = suporteCoop;
+    }
+
+    public String getPersonagemPrincipal() {
+        return personagemPrincipal;
+    }
+
+    public void setPersonagemPrincipal(String personagemPrincipal) {
+        this.personagemPrincipal = personagemPrincipal;
+    }
+}
+
