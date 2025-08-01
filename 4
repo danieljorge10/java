@@ -1,0 +1,37 @@
+public class JogoRPG extends Jogo {
+    private int nivelMaximo;
+    private int quantidadeMissoes;
+    private String tipoPersonagem;
+
+    public JogoRPG(String nome, String desenvolvedora, double preco, int nivelMaximo, int quantidadeMissoes, String tipoPersonagem) {
+        super(nome, desenvolvedora, preco);
+        this.nivelMaximo = nivelMaximo;
+        this.quantidadeMissoes = quantidadeMissoes;
+        this.tipoPersonagem = tipoPersonagem;
+    }
+
+    public int getNivelMaximo() {
+        return nivelMaximo;
+    }
+
+    public void setNivelMaximo(int nivelMaximo) {
+        this.nivelMaximo = nivelMaximo;
+    }
+
+    public int getQuantidadeMissoes() {
+        return quantidadeMissoes;
+    }
+
+    public void setQuantidadeMissoes(int quantidadeMissoes) {
+        this.quantidadeMissoes = quantidadeMissoes;
+    }
+
+    public String getTipoPersonagem() {
+        return tipoPersonagem;
+    }
+
+    public void setTipoPersonagem(String tipoPersonagem) {
+        this.tipoPersonagem = tipoPersonagem;
+    }
+}
+
